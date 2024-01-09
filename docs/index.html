@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google" value="notranslate" />
+    <title>Language switcher</title>
+    <link rel="icon" href="img/favicon/favicon.svg" />
+    <meta name="description" content="This is a switcher of language's guide that can help any developer who wants to set a switcher of languages on his web site." />
+    <link rel="stylesheet" href="./css/libs/libs.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <div class="header__toolbar toolbar">
+                <span class="toolbar__item" data-lang="ru">RU</span>
+                <span class="toolbar__item" data-lang="en">EN</span>
+                <div class="toolbar__note lang-try-it">попробуй!</div>
+            </div>
+            <div class="header__info">
+                <h1 class="header__title lang-header-title" data-aos="zoom-in" data-aos-delay="1500" data-aos-duration="2000" data-aos-offset="0">Реализация функции переключения языков</h1>
+                <h2 class="header__subtitle" data-aos="zoom-in" data-aos-delay="2500" data-aos-duration="2000" data-aos-offset="0">
+                    {
+                    <span class="lang-header-subtitle">Подробный гайд</span>
+                    }
+                </h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="about">
+            <div class="about__inner container">
+                <h2 class="about__title about--main-color title lang-about-title">О проекте</h2>
+                <p class="about__description">
+                    <span class="lang-about-description">В данном проекте речь пойдет о реализации функции переключения
+            языков на небольших сайтах, преимущественно на лэндингах. Основная
+            идея - показать принцип подключения подобной фичи на сайт, без
+            использования сторонних библиотек, используя возможности языка</span>
+                    <span class="about--second-color">JavaScript .</span>
+                </p>
+            </div>
+        </section>
+        <section class="get-ready">
+            <div class="container">
+                <h2 class="get-ready__title lang-get-ready-title-first-step get-ready--main-color title">
+                    Подготовка. Подключение JavaScript - файла, создание объекта, содержащего перевод страницы
+                </h2>
+                <div class="get-ready__inner get-ready__inner--get-ready">
+                    <p class="get-ready__description lang-get-ready-desc-one">
+                        Чтобы добавить функцию смены языков на свой сайт, создадим js-файл
+                        с названием 'lang' и подключим его в html:
+                    </p>
+                    <div class="get-ready__block-of-code block-of-code" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0"><img src="./img/get-ready/get-ready-block-of-code.png" alt="block of code"></div>
+                    <div class="get-ready__block-of-code block-of-code" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0"><img src="./img/get-ready/get-ready-block-of-code-2.png" alt="block of code"></div>
+                    <p class="get-ready__description lang-get-ready-desc-two">
+                        Далее в файле lang.js объявим / создадим все необходимые объекты, переменные и функции. Создадим объект langs, где в качестве ключей запишем название классов тех элементов, которые требуют перевода (дальше мы узнаем что классы нужно называть с префикса 'lang-' в html, об этом будет рассказано дальше) используя кавычки, а в качестве значений - объект, который имеет в качестве ключей - языки, а в качестве значений - перевод. Это необходимо для реализации функции перевода, о чем пойдет речь дальше.
+                    </p>
+                </div>
+                <h2 class="get-ready__title lang-get-ready-title-second-step get-ready--main-color title">
+                    Создание интерактивного элемента выбора языков + реализация добавления в строку браузера hash (ru или en) в зависимости от выбора языка
+                </h2>
+                <div class="get-ready__inner get-ready__inner--step-2">
+                    <p class="get-ready__description lang-get-ready-desc-three">
+                        Приступим к созданию интерактивного элемента на html-странице - toolbar с переключателем.
+                    </p>
+                    <div class="get-ready__block-of-code block-of-code" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0"><img src="./img/get-ready/toolbar-picture.png" alt="block of code"></div>
+                    <div class="get-ready__block-of-code block-of-code" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0"><img src="./img/get-ready/toolbar-code-html.png" alt="block of code"></div>
+                    <p class="get-ready__description lang-get-ready-desc-four">
+                        Напишем код в html, отображающий toolbar на странице.
+                    </p>
+                    <p class="get-ready__description lang-get-ready-desc-five">
+                        Также пропишем код scss. Чтобы элементы все отображались на странице корректно, нужно задать родительскому блоку свойство в стилях position: relative; так как элемент toolbar отображается с помощью абсолютного позиционирования.
+                    </p>
+                    <div class="get-ready__block-of-code block-of-code" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0"><img src="./img/get-ready/toolbar-scss.png" alt="block of code"></div>
+                    <div class="get-ready__block-of-code block-of-code" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0"><img src="./img/get-ready/toolbar-add-hash.png" alt="block of code"></div>
+                    <p class="get-ready__description lang-get-ready-desc-six">
+                        Создадим коллекцию из 2-х элементов, по которым будет происходить клик - русский язык или английский, запишем её в переменную toolbarItems и с помощью метода forEach создадим обработчик событий для каждого элемента данной коллекции. Далее, запишем в переменную lang строку ru или en в зависимости от клика на элемент (у каждого элемента есть дата-атрибут data-lang), и с помощью свойства строки браузера location.href добавим в строку браузера hash - ru или en в зависимости от того, на какой элементы мы кликнем, - выберем русский язык или английский. И перезагрузим страницу используя метод location.reload().
+                    </p>
+                </div>
+                <h2 class="get-ready__title lang-get-ready-title-third-step get-ready--main-color title">
+                    Coздание функции переключения языков
+                </h2>
+                <div class="get-ready__inner get-ready__inner--step-3">
+                    <p class="get-ready__description lang-get-ready-desc-seven">
+                        Для начала, перед созданием основной функции создадим две вспомогательные, которые будут добавлять или удалять активный класс toolbar--active, который добавляет элементу, по которому произошло событие клика, в интерактивном элементе toolbar, - нижнее подчеркивание и выделяет элемент жирным цветом (font-weight: 600):
+                    </p>
+                    <div class="get-ready__block-of-code block-of-code" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0"><img src="./img/get-ready/create-toggle-functions.png" alt="block of code"></div>
+                    <div class="get-ready__block-of-code block-of-code" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0"><img src="./img/get-ready/lang-function.png" alt="block of code"></div>
+                    <div class="get-ready__description">
+                        <p class="lang-get-ready-desc-eight">
+                            И наконец, создаем функцию, реализующую переключение языков. Перед тем как написать код, нужно создать массив, хранящий все возможные языки, записав его в переменную allLangs в глобальной области видимости:
+                        </p>
+
+                        <img class="height-auto-mb-mt" src="./img/get-ready/array-langs.png" alt="block of code">
+                        <p class="lang-get-ready-desc-nine mb">
+                            Далее мы получаем значение hash, которое создали на этапе клика по элементу в toolbar, с помощью метода substring(1), обрезаем hash слева на один символ (#ru или #en в зависимости от нажатия на элемент в toolbar) - получаем ru или en в переменную hash.
+                        </p>
+                        <p class="lang-get-ready-desc-ten mb">
+                            Далее, через if - statement проверяем, если hash = ru, запускаем выше созданную функцию, которая добавляет элементу RU в toolbar активный класс toolbar--active, делающий букву с подчеркиванием и добавлением font-weight: 600, если hash = en, тогда добаляем класс элементу EN из toolbar.
+                        </p>
+                        <p class="lang-get-ready-desc-eleven mb">
+                            Далее, проверяем, если пользователь зашел на страницу и ничего пока что не выбирал (никакой из языков), тогда нужно сделать язык по умолчанию, проверив, есть ли в массиве allLangs значение hash (ru или en), то есть таким образом мы проверяем нажатие на один из элементов в toolbar. Если его нет, - значит hash в строке браузера еще не установлен, следовательно нужно его установить принудительно и обновить страницу.
+                        </p>
+                        <p class="lang-get-ready-desc-twelve mb">
+                            Далее через цикл for нужно пройтись по всем ключам, созданным в объекте langs, который мы создавали в самом начале, и найти все элементы на странице, которые имеют префикс '.lang-'. То есть теперь, когда мы создаем элемент, в html, к примеру, какой - то текст в теге p, и нам нужно зделать его перевод, нужно просто добавить к нему класс lang-class-name, где вместо класса - любой нужный класс. Всё, что находится после lang-, а именно class-name, нужно записать в качестве ключа в объекте langs. Таким образом мы нашли все элементы на странице, которые содержат префикс lang- .
+                        </p>
+                        <p class="lang-get-ready-desc-thirteen">
+                            Далее, с помощью проверки, смотрим, есть ли сам элемент на странице html, а также, имеет ли объект langs ключ, а именно класс элемента, который требуется перевести, и значение - хранящееся в объекте, который в свою очередь хранит в качестве ключей - язык, а в качестве значения - перевод. И если объект содержит нужный класс элемета, - остается только заменить текст нужных элементов на html - странице c помощью метода innerHTML, присвоив значение из объекта langs - langs[key][hash], где key - нужный класс выбранного элемента для перевода, а hash - значение в браузерной строке после # - ru или en в зависимости от выбранного языка. Таким образом в выбранный элемент для перевода на странице html вставляется значение перевода из объекта langs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner container">
+            &copy; 2024 | Denny Maverick
+        </div>
+    </footer>
+    <!-- * jQuery -->
+    <script src="./js/libs/jquery/jquery.js"></script>
+    <!-- * js libs -->
+    <script src="./js/libs/vendors/libs.min.js"></script>
+    <!--* main script  -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
