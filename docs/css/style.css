@@ -353,6 +353,7 @@ a:focus {
   .get-ready__inner {
     grid-template-columns: 1fr;
     margin-bottom: 4rem;
+    gap: 2.5rem;
   }
 
   .get-ready__title {
