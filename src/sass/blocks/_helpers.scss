@@ -1,0 +1,24 @@
+.hide {
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.title {
+  font-size: 2.8rem;
+  @include media-down(710px) {
+    font-size: 4vw;
+  }
+}
+
+.height-auto-mb-mt {
+  height: auto;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.mb {
+  margin-bottom: 3rem;
+}

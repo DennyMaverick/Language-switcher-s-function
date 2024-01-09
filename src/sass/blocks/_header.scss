@@ -1,0 +1,41 @@
+.header {
+  background-color: $black;
+  color: $white;
+  &__inner {
+    position: relative;
+  }
+  &__toolbar {
+    position: absolute;
+    right: 3rem;
+    top: 2.5rem;
+
+  }
+  &__info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 350px;
+  }
+  &__title {
+    color: $main-color;
+    margin-top: 14rem;
+    margin-bottom: 2rem;
+    @include media-down(710px) {
+      font-size: 4vw;
+    }
+  }
+  &__subtitle {
+    color: $color-grey;
+    // position: relative;
+    // left: -24rem;
+    @include media-down(710px) {
+      font-size: 4vw;
+    }
+    span {
+      color: $second-color;
+      position: relative;
+      bottom: -0.1rem;
+    }
+  }
+}

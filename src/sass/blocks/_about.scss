@@ -1,0 +1,29 @@
+.about {
+  justify-content: flex-start;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: $color-dark;
+  @include media-down(710px) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  &__description {
+    color: $black;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    @include media-down(710px) {
+      font-size: 4vw;
+      line-height: 4.7vw;
+  }
+  }
+  &__title {
+    margin-bottom: 1.5rem;
+  }
+  &--main-color {
+    color: $main-color;
+  }
+  &--second-color {
+    color: $second-color;
+  }
+}
