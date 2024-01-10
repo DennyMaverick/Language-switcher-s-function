@@ -103,6 +103,10 @@ const langs = {
     ru: 'При разработке одного сайта мне потребовалось переводить всплывающие подсказки у элементов. То есть, при наводе на некоторые элементы пользователь может увидеть всплывающие подсказки с текстом. Это делается с помощью атрибута title в html-элементе. Следующий код реализует перевод таких всплывающих подсказок, - как для одного элемента, так и для множества однотипных. Для этого нужно также создать 2 дополнительных объекта titles и repeatTitles по аналогии с предыдущими объектами langs, repeatElems и placeholders. Блок кода помещается в основную функцию changeLang().',
     en: 'When I had been working by one project I needed to translate popup messages that the some elements had. It means, when the user hovers on some elements he can see the popup messages with the text. It does do using attribute title in the html - element. Next code realizes the translation of these popup messages, - for one element or for a lot of one-typed. It needs also to create 2 additional objects title and repeatTitles as we did before with objects langs, repeatElems and placeholders. This block of code put in the main function changeLang().',
   },
+  'get-ready-title-fourth-step': {
+    ru: 'Создание дополнительного функционала',
+    en: 'Creating the additional functionality',
+  },
 };
 
 const titles = {
