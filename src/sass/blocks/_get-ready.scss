@@ -49,6 +49,11 @@
     color: $black;
   }
 
+  &__inner--step-4 {
+    background-color: $color-dark;
+    color: $black;
+  }
+
   &__block-of-code {
     display: flex;
     flex-direction: column;
