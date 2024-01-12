@@ -14,20 +14,26 @@ const openMenu = function () {
 const closeMenu = function () {
   navMenu.classList.remove('nav--active-mobile-menu');
   closeButton.classList.remove('nav__close--active');
+  navMenu.classList.remove('nav--active-mobile-menu');
 };
+
+// const toggleHide = function () {
+
+// }
 
 const resizeWindow = function () {
   if (document.documentElement.clientWidth > 992) {
     menuBurger.classList.add('hide');
     closeButton.classList.add('hide');
-    closeButton.classList.remove('nav__close--active');
     navMenu.classList.remove('hide');
+    closeMenu();
   } else {
     menuBurger.classList.remove('hide');
     closeButton.classList.remove('hide');
     closeButton.classList.add('nav__close--active');
   }
 };
+
 
 window.addEventListener('resize', resizeWindow);
 
