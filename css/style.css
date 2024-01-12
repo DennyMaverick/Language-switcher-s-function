@@ -373,6 +373,7 @@ a:focus {
 
 .nav__link {
   padding: 1rem 1.1rem;
+  color: #f2526c;
 }
 
 .nav__link:hover {
