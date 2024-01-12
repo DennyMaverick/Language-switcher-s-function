@@ -83,17 +83,17 @@
                         содержащего перевод страницы
                     </h2>
                     <div class="get-ready__inner get-ready__inner--get-ready">
-                        <p class="get-ready__description lang-get-ready-desc-one">
+                        <p class="get-ready__description get-ready__priority-1 lang-get-ready-desc-one">
                             Чтобы добавить функцию смены языков на свой сайт, создадим
                             js-файл с названием 'lang' и подключим его в html:
                         </p>
-                        <div class="get-ready__block-of-code block-of-code" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0">
+                        <div class="get-ready__block-of-code get-ready__priority-2 block-of-code" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0">
                             <img src="./img/get-ready/get-ready-block-of-code.png" alt="block of code" />
                         </div>
-                        <div class="get-ready__block-of-code block-of-code" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0">
+                        <div class="get-ready__block-of-code get-ready__priority-4 block-of-code" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0">
                             <img src="./img/get-ready/get-ready-block-of-code-2.png" alt="block of code" />
                         </div>
-                        <p class="get-ready__description lang-get-ready-desc-two">
+                        <p class="get-ready__description get-ready__priority-3 get-ready__first-priority lang-get-ready-desc-two">
                             Далее в файле lang.js объявим / создадим все необходимые
                             объекты, переменные и функции. Создадим объект langs, где в
                             качестве ключей запишем название классов тех элементов, которые
@@ -113,32 +113,32 @@
                         выбора языка
                     </h2>
                     <div class="get-ready__inner get-ready__inner--step-2">
-                        <p class="get-ready__description lang-get-ready-desc-three">
+                        <p class="get-ready__description get-ready__priority-1 lang-get-ready-desc-three">
                             Приступим к созданию интерактивного элемента на html-странице -
                             toolbar с переключателем.
                         </p>
-                        <div class="get-ready__block-of-code block-of-code" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0">
+                        <div class="get-ready__block-of-code get-ready__priority-2 block-of-code" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0">
                             <img src="./img/get-ready/toolbar-picture.png" alt="block of code" />
                         </div>
-                        <div class="get-ready__block-of-code block-of-code" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0">
+                        <div class="get-ready__block-of-code get-ready__priority-4 block-of-code" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0">
                             <img src="./img/get-ready/toolbar-code-html.png" alt="block of code" />
                         </div>
-                        <p class="get-ready__description lang-get-ready-desc-four">
+                        <p class="get-ready__description get-ready__priority-3 lang-get-ready-desc-four">
                             Напишем код в html, отображающий toolbar на странице.
                         </p>
-                        <p class="get-ready__description lang-get-ready-desc-five">
+                        <p class="get-ready__description get-ready__priority-5 lang-get-ready-desc-five">
                             Также пропишем код scss. Чтобы элементы все отображались на
                             странице корректно, нужно задать родительскому блоку свойство в
                             стилях position: relative; так как элемент toolbar отображается
                             с помощью абсолютного позиционирования.
                         </p>
-                        <div class="get-ready__block-of-code block-of-code" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0">
+                        <div class="get-ready__block-of-code get-ready__priority-6 block-of-code" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0">
                             <img src="./img/get-ready/toolbar-scss.png" alt="block of code" />
                         </div>
-                        <div class="get-ready__block-of-code block-of-code" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0">
+                        <div class="get-ready__block-of-code get-ready__priority-8 block-of-code" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0">
                             <img src="./img/get-ready/toolbar-add-hash.png" alt="block of code" />
                         </div>
-                        <p class="get-ready__description lang-get-ready-desc-six">
+                        <p class="get-ready__description get-ready__priority-7 lang-get-ready-desc-six">
                             Создадим коллекцию из 2-х элементов, по которым будет
                             происходить клик - русский язык или английский, запишем её в
                             переменную toolbarItems и с помощью метода forEach создадим
@@ -158,7 +158,7 @@
                         Coздание функции переключения языков
                     </h2>
                     <div class="get-ready__inner get-ready__inner--step-3">
-                        <p class="get-ready__description lang-get-ready-desc-seven">
+                        <p class="get-ready__description get-ready__priority-1  lang-get-ready-desc-seven">
                             Для начала, перед созданием основной функции создадим две
                             вспомогательные, которые будут добавлять или удалять активный
                             класс toolbar--active, который добавляет элементу, по которому
@@ -166,13 +166,13 @@
                             нижнее подчеркивание и выделяет элемент жирным цветом
                             (font-weight: 600):
                         </p>
-                        <div class="get-ready__block-of-code block-of-code" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0">
+                        <div class="get-ready__block-of-code get-ready__priority-2 block-of-code" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0">
                             <img src="./img/get-ready/create-toggle-functions.png" alt="block of code" />
                         </div>
-                        <div class="get-ready__block-of-code block-of-code" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0">
+                        <div class="get-ready__block-of-code get-ready__priority-4 block-of-code" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0">
                             <img src="./img/get-ready/lang-function.png" alt="block of code" />
                         </div>
-                        <div class="get-ready__description">
+                        <div class="get-ready__description get-ready__priority-3">
                             <p class="lang-get-ready-desc-eight">
                                 И наконец, создаем функцию, реализующую переключение языков.
                                 Перед тем как написать код, нужно создать массив, хранящий все
@@ -239,7 +239,7 @@
                         Создание дополнительного функционала
                     </h2>
                     <div class="get-ready__inner get-ready__inner--step-4">
-                        <p class="get-ready__description lang-get-ready-desc-fourteen">
+                        <p class="get-ready__description get-ready__priority-1 lang-get-ready-desc-fourteen">
                             При разработке сайта, функционала, который мы описали выше,
                             может быть недостаточно. Могут возникнуть случаи, когда на
                             странице html есть однотипные повторяющиеся элементы. Например,
@@ -249,9 +249,9 @@
                             чтобы всё работало, нужно добавить следующий блок кода в функцию
                             changeLang():
                         </p>
-                        <img src="./img/get-ready/code-for-repeated-elements.png" alt="block of code" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0" />
-                        <img src="./img/get-ready/repeated-object.png" alt="block of code" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0" />
-                        <p class="get-ready__description lang-get-ready-desc-fifteen">
+                        <img class="get-ready__priority-2" src="./img/get-ready/code-for-repeated-elements.png" alt="block of code" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0" />
+                        <img class="get-ready__priority-4" src="./img/get-ready/repeated-object.png" alt="block of code" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0" />
+                        <p class="get-ready__description get-ready__priority-3 lang-get-ready-desc-fifteen">
                             С помощью этого блока кода мы получаем на странице все
                             однотипные элементы и в каждый такой элемент с помощью метода
                             innerHTML вставляем значение перевода из нового объекта
@@ -259,7 +259,7 @@
                             объекта langs. Просто в него мы будем складывать все ключи
                             повторяющихся элементов на странице html.
                         </p>
-                        <p class="get-ready__description lang-get-ready-desc-sixteen">
+                        <p class="get-ready__description get-ready__priority-5 lang-get-ready-desc-sixteen">
                             При работе с плейсхолдерами, - надписями, которые содержатся в
                             текстовых формах ввода, таких как input, textarea, следующий код
                             поможет переводить текст плейсхолдера. Его также нужно поместить
@@ -270,9 +270,9 @@
                             placeholder. А в качество значений - объект с переводом на
                             английский и русский, как было описано ранее.
                         </p>
-                        <img src="./img/get-ready/for-placeholders.png" alt="block of code" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0" />
-                        <img src="./img/get-ready/for-titles.png" alt="block of code" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0" />
-                        <p class="get-ready__description lang-get-ready-desc-seventeen">
+                        <img class="get-ready__priority-6" src="./img/get-ready/for-placeholders.png" alt="block of code" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0" />
+                        <img class="get-ready__priority-8" src="./img/get-ready/for-titles.png" alt="block of code" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="2000" data-aos-offset="0" />
+                        <p class="get-ready__description get-ready__priority-7 lang-get-ready-desc-seventeen">
                             При разработке одного сайта мне потребовалось переводить
                             всплывающие подсказки у элементов. То есть, при наводе на
                             некоторые элементы пользователь может увидеть всплывающие
