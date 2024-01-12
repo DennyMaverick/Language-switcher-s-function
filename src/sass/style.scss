@@ -17,6 +17,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -37,6 +38,18 @@ h6,
 p {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active {
+  color: $main-color;
+}
+
+a:visited {
+  color: $main-color;
 }
 
 .container {
@@ -95,6 +108,8 @@ a:focus {
 @import "./blocks/about";
 @import './blocks/get-ready';
 @import './blocks/footer';
+@import './blocks/nav';
+@import './blocks/menu-burger';
 
 // @import "./blocks/slick";
 

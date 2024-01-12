@@ -1,0 +1,53 @@
+.menu-burger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  left: 3rem;
+  top: 2.5rem;
+  width: 2rem;
+  height: 2rem;
+  @include bp-desk(tablet) {
+    display: block;
+  }
+  &__item {
+    position: absolute;
+    height: 0.2rem;
+    background-color: $main-color;
+    width: 100%;
+    left: 0;
+    top: calc(50% - 0.2rem);
+    transition: .3s ease-in transform, .3s ease-in height;
+    &--active {
+      height: 0;
+    }
+
+    &::before {
+      content: '';
+      left: 0;
+      top: -.7rem;
+
+      position: absolute;
+      background-color: $main-color;
+      height: 0.2rem;
+      width: 100%;
+      left: 0;
+      top: -.6rem;
+    }
+    &::after {
+      content: '';
+      left: 0;
+      bottom: - .6rem;
+
+      position: absolute;
+      background-color: $main-color;
+      height: 0.2rem;
+      width: 100%;
+    }
+    &--active::before {
+      transform: rotate(45deg);
+    }
+    &--active::after {
+      transform: translate(0, -1rem) rotate(-45deg) ;
+    }
+  }
+}

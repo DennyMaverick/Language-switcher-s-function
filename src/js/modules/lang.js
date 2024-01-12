@@ -107,6 +107,30 @@ const langs = {
     ru: 'Создание дополнительного функционала',
     en: 'Creating the additional functionality',
   },
+  'about-nav-title': {
+    ru: 'О проекте',
+    en: 'About',
+  },
+  'get-ready-nav-title': {
+    ru: 'Подготовка',
+    en: 'Get ready',
+  },
+  'toolbar-nav-title': {
+    ru: 'Создание toolbar',
+    en: 'Create the toolbar',
+  },
+  'main-func-nav-title': {
+    ru: 'Основная функция',
+    en: 'Main function',
+  },
+  'addition-nav-title': {
+    ru: 'Дополнение',
+    en: 'Addition',
+  },
+  'close-button': {
+    ru: 'Закрыть',
+    en: 'Close',
+  },
 };
 
 const titles = {
