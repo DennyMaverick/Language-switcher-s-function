@@ -587,6 +587,38 @@ a:focus {
     line-height: 4.7vw;
   }
 
+  .get-ready__priority-1 {
+    grid-row: 1;
+  }
+
+  .get-ready__priority-2 {
+    grid-row: 2;
+  }
+
+  .get-ready__priority-3 {
+    grid-row: 3;
+  }
+
+  .get-ready__priority-4 {
+    grid-row: 4;
+  }
+
+  .get-ready__priority-5 {
+    grid-row: 5;
+  }
+
+  .get-ready__priority-6 {
+    grid-row: 6;
+  }
+
+  .get-ready__priority-7 {
+    grid-row: 7;
+  }
+
+  .get-ready__priority-8 {
+    grid-row: 8;
+  }
+
   .footer {
     padding-top: 4rem;
     padding-bottom: 4rem;
