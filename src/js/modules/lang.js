@@ -107,26 +107,6 @@ const langs = {
     ru: 'Создание дополнительного функционала',
     en: 'Creating the additional functionality',
   },
-  'about-nav-title': {
-    ru: 'О проекте',
-    en: 'About',
-  },
-  'get-ready-nav-title': {
-    ru: 'Подготовка',
-    en: 'Get ready',
-  },
-  'toolbar-nav-title': {
-    ru: 'Создание toolbar',
-    en: 'Create the toolbar',
-  },
-  'main-func-nav-title': {
-    ru: 'Основная функция',
-    en: 'Main function',
-  },
-  'addition-nav-title': {
-    ru: 'Дополнение',
-    en: 'Addition',
-  },
   'close-button': {
     ru: 'Закрыть',
     en: 'Close',
@@ -148,10 +128,26 @@ const repeatTitles = {
 };
 
 const repeatElems = {
-  // "next-functional": {
-  //   ru: "При работе над проектом был реализован следующий функционал:",
-  //   en: "During the work on the project, the following functionality was implemented:",
-  // },
+  'about-nav-title': {
+    ru: 'О проекте',
+    en: 'About',
+  },
+  'get-ready-nav-title': {
+    ru: 'Подготовка',
+    en: 'Get ready',
+  },
+  'toolbar-nav-title': {
+    ru: 'Создание toolbar',
+    en: 'Create the toolbar',
+  },
+  'main-func-nav-title': {
+    ru: 'Основная функция',
+    en: 'Main function',
+  },
+  'addition-nav-title': {
+    ru: 'Дополнение',
+    en: 'Addition',
+  },
 };
 
 // ====== Секция Search / placeholders
@@ -254,14 +250,14 @@ function changeLang() {
   //   }
   // }
   //! Для повторяющихся элементов
-  // for (let key in repeatElems) {
-  //   let elems = document.querySelectorAll(".lang-" + key)
-  //   elems.forEach(function (elem) {
-  //     if (elem && repeatElems[key][hash]) {
-  //       elem.innerHTML = repeatElems[key][hash]
-  //     }
-  //   })
-  // }
+  for (let key in repeatElems) {
+    let elems = document.querySelectorAll('.lang-' + key);
+    elems.forEach(function (elem) {
+      if (elem && repeatElems[key][hash]) {
+        elem.innerHTML = repeatElems[key][hash];
+      }
+    });
+  }
 }
 // запуск функции changeLang()
 changeLang();

@@ -7,4 +7,35 @@
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
+  &__footer-menu {
+    display: flex;
+    @include bp-desk(mobile) {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  &__row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @include bp-desk(tablet) {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+  &__copy {
+    color: $main-color;
+    margin-right: 10rem;
+    @include bp-desk(tablet) {
+      margin-right: 0;
+      margin-bottom: 3rem;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+  &__nav {
+    @include bp-desk(tablet) {
+      margin-left: -1rem;
+    }
+  }
 }
