@@ -607,6 +607,10 @@ a:focus {
     margin-left: -1rem;
   }
 
+  .footer-menu__item::after {
+    display: none;
+  }
+
   .menu-burger {
     display: block;
   }

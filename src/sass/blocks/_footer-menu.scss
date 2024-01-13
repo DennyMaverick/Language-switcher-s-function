@@ -19,6 +19,9 @@
       height: 0.2rem;
       background-color: $main-color;
       transition: 0.3s ease-in width;
+      @include bp-desk(tablet) {
+        display: none;
+      }
     }
     &:hover::after {
       width: 50.04%;
