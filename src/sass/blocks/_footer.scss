@@ -25,7 +25,7 @@
   }
   &__copy {
     color: $main-color;
-    margin-right: 10rem;
+    margin-bottom: 1.5rem;
     @include bp-desk(tablet) {
       margin-right: 0;
       margin-bottom: 3rem;
@@ -33,9 +33,21 @@
       flex-direction: column;
     }
   }
-  &__nav {
+  &__left-side {
+    margin-right: 10rem;
     @include bp-desk(tablet) {
-      margin-left: -1rem;
+      margin-right: 0;
     }
   }
+  &__nav {
+    margin-top: -2.9rem;
+    @include bp-desk(tablet) {
+      margin-left: -1rem;
+      margin-top: 3rem;
+    }
+  }
+  &__socials {
+    display: flex;
+  }
+
 }

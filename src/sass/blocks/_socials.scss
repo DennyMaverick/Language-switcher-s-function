@@ -1,0 +1,23 @@
+.socials {
+    display: flex;
+    align-items: center;
+    // .socials__menu
+
+    &__menu {
+      display: flex;
+      align-items: center;
+    }
+    &__desc {
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      color: $second-color;
+      margin-right: 1rem;
+      @include bp-desk(mobile-lx) {
+        font-size: 1rem;
+      }
+    }
+    &__menu {
+      margin-top: 0.2rem;
+    }
+}
+

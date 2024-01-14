@@ -1,6 +1,4 @@
-
 //* =========== Объект с переводом страницы ==============
-
 
 const langs = {
   'try-it': {
@@ -110,6 +108,10 @@ const langs = {
   'close-button': {
     ru: 'Закрыть',
     en: 'Close',
+  },
+  'sicials-desc': {
+    ru: 'Связаться с автором проекта :',
+    en: 'contact to the projec`s author  :',
   },
 };
 

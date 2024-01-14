@@ -1,0 +1,21 @@
+.socials-menu {
+
+    // .socials-menu__item
+
+    &__item {
+    }
+
+    // .socials-menu__link
+
+    &__link {
+      padding: 0.4rem;
+    }
+
+    // .socials-menu__social-image
+
+    &__social-image {
+      width: 1.5rem;
+      height: 1.5rem;
+      fill: $main-color;
+    }
+}
