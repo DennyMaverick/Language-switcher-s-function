@@ -19,43 +19,50 @@
             <div class="header__menu-burger menu-burger">
                 <span class="menu-burger__item"></span>
             </div>
-            <nav class="header__nav nav">
-                <button class="nav__close close-button">
-                    <span class="lang-close-button">закрыть</span>
-                </button>
-                <ul class="header__nav-menu nav__menu">
-                    <li class="nav__item">
-                        <a class="nav__link nav--first-nav-elem lang-about-nav-title" href="#about">
-                            О проекте
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link lang-get-ready-nav-title" href="#get-ready">
-                            Подготовка
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link lang-toolbar-nav-title" href="#toolbar">
-                            Создание toolbar
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link lang-main-func-nav-title" href="#main-func">
-                            Основная функция
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link lang-addition-nav-title" href="#addition">
-                            Дополнение
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header__toolbar toolbar">
-                <span class="toolbar__item" data-lang="ru">RU</span>
-                <span class="toolbar__item" data-lang="en">EN</span>
-                <div class="toolbar__note lang-try-it">попробуй!</div>
+            <div class="header__top">
+                <nav class="header__nav nav">
+                    <button class="nav__close close-button">
+                        <span class="lang-close-button">закрыть</span>
+                    </button>
+                    <ul class="header__nav-menu nav__menu">
+                        <li class="nav__item">
+                            <a class="nav__link nav--first-nav-elem lang-about-nav-title" href="#about">
+                                О проекте
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link lang-get-ready-nav-title" href="#get-ready">
+                                Подготовка
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link lang-toolbar-nav-title" href="#toolbar">
+                                Создание toolbar
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link lang-main-func-nav-title" href="#main-func">
+                                Основная функция
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link lang-addition-nav-title" href="#addition">
+                                Дополнение
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link lang-contacts-nav-title" href="#footer">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__toolbar toolbar">
+                    <span class="toolbar__item" data-lang="ru">RU</span>
+                    <span class="toolbar__item" data-lang="en">EN</span>
+                </div>
             </div>
+
             <div class="header__info">
                 <h1 class="header__title lang-header-title" data-aos="zoom-in" data-aos-delay="1500" data-aos-duration="2000" data-aos-offset="0">
                     Реализация функции переключения языков
@@ -299,7 +306,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer__inner container">
             <div class="footer__row">
                 <div class="footer__left-side">

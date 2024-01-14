@@ -117,14 +117,30 @@ a:focus {
   color: #fff;
 }
 
-.header__inner {
-  position: relative;
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 5.7rem;
 }
 
 .header__toolbar {
-  position: absolute;
-  right: 3rem;
-  top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header__inner {
+  position: relative;
 }
 
 .header__info {
@@ -160,7 +176,15 @@ a:focus {
 }
 
 .header__nav {
-  padding-top: 5.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .header__nav-menu {
@@ -248,31 +272,12 @@ a:focus {
   color: #2b2b2b;
   border-radius: 1rem;
   padding: .5rem 1rem;
+  font-size: 1.3rem;
 }
 
 .toolbar--active {
   font-weight: 600;
   text-decoration: underline;
-}
-
-.toolbar::after {
-  cursor: default;
-  content: "";
-  position: absolute;
-  bottom: -5rem;
-  right: 4rem;
-  width: .3rem;
-  height: 4rem;
-  border-radius: 50% 50% 0 0;
-  border: 1px dashed #fff;
-  background-color: #fff;
-}
-
-.toolbar__note {
-  color: #f2db52;
-  position: absolute;
-  bottom: -8rem;
-  right: 50%;
 }
 
 .toolbar__item {
@@ -282,6 +287,10 @@ a:focus {
 
 .toolbar__item:hover {
   color: #fff;
+}
+
+.toolbar__item+.toolbar__item {
+  margin-left: .5rem;
 }
 
 .about {
@@ -380,8 +389,8 @@ a:focus {
 }
 
 .footer {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 5.7rem;
+  padding-bottom: 5rem;
   background-color: #2b2b2b;
   color: #fff;
 }
@@ -588,7 +597,25 @@ a:focus {
 
 }
 
+@media (max-width: 1200px) {
+  .nav__item {
+    font-size: 1.2rem;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
 @media (max-width: 992px) {
+  .header__top {
+    padding-top: 2.5rem;
+  }
+
+  .header__toolbar {
+    margin-left: auto;
+  }
+
   .header__nav {
     padding: 0;
   }
@@ -719,15 +746,6 @@ a:focus {
   .toolbar {
     font-size: 1.07rem;
     padding: .5rem .7rem;
-  }
-
-  .toolbar::after {
-    display: none;
-  }
-
-  .toolbar__note {
-    right: 20%;
-    bottom: -4rem;
   }
 
   .about {
