@@ -44,7 +44,9 @@ closeButton.addEventListener('click', closeMenu);
 const doNavigate = function () {
   navItems.forEach(item => {
     item.addEventListener('click', function () {
-      navMenu.classList.add('hide');
+      if (document.documentElement.clientWidth < 992) {
+        navMenu.classList.add('hide');
+      }
     });
   });
 };

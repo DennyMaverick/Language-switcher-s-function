@@ -20,7 +20,8 @@
         <div class="header__menu-burger menu-burger">
           <span class="menu-burger__item"></span>
         </div>
-        <nav class="header__nav nav">
+        <div class="header__top">
+          <nav class="header__nav nav">
           <button class="nav__close close-button">
             <span class="lang-close-button">закрыть</span>
           </button>
@@ -53,13 +54,19 @@
                 Дополнение
               </a>
             </li>
+            <li class="nav__item">
+              <a class="nav__link lang-contacts-nav-title" href="#footer">
+                Контакты
+              </a>
+            </li>
           </ul>
         </nav>
         <div class="header__toolbar toolbar">
-          <span class="toolbar__item" data-lang="ru">RU</span>
-          <span class="toolbar__item" data-lang="en">EN</span>
-          <div class="toolbar__note lang-try-it">попробуй!</div>
+            <span class="toolbar__item" data-lang="ru">RU</span>
+            <span class="toolbar__item" data-lang="en">EN</span>
+          </div>
         </div>
+
         <div class="header__info">
           <h1
             class="header__title lang-header-title"
@@ -453,44 +460,53 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id = "footer">
       <div class="footer__inner container">
         <div class="footer__row">
           <div class="footer__left-side">
             <div class="footer__copy copy">
-            <span class="copy__copy">&copy; 2024</span>
-            |
-            <span class="copy__author">Denny Maverick</span>
-          </div>
-          <div class="footer__socials socials">
-            <p class="socials__desc lang-sicials-desc">
-              Связаться с автором проекта:
-            </p>
-            <ul class="socials__menu socials-menu">
-              <li class="socials-menu__item">
-                <a class="socials-menu__link" href="https://www.vk.com/maverick177" target="_blank">
-                  <svg class="socials-menu__social-image">
-                      <use xlink:href="./img/sprite/symbol/sprite.svg#socials--vk-icon" />
+              <span class="copy__copy">&copy; 2024</span>
+              |
+              <span class="copy__author">Denny Maverick</span>
+            </div>
+            <div class="footer__socials socials">
+              <p class="socials__desc lang-sicials-desc">
+                Связаться с автором проекта:
+              </p>
+              <ul class="socials__menu socials-menu">
+                <li class="socials-menu__item">
+                  <a
+                    class="socials-menu__link"
+                    href="https://www.vk.com/maverick177"
+                    target="_blank"
+                  >
+                    <svg class="socials-menu__social-image">
+                      <use
+                        xlink:href="./img/sprite/symbol/sprite.svg#socials--vk-icon"
+                      />
                     </svg>
-                </a>
-              </li>
-              <li class="socials-menu__item">
-                <a class="socials-menu__link" href="https://www.t.me/Denny_maverick" target="_blank">
-                  <svg class="socials-menu__social-image">
-                      <use xlink:href="./img/sprite/symbol/sprite.svg#socials--telegram-icon" />
+                  </a>
+                </li>
+                <li class="socials-menu__item">
+                  <a
+                    class="socials-menu__link"
+                    href="https://www.t.me/Denny_maverick"
+                    target="_blank"
+                  >
+                    <svg class="socials-menu__social-image">
+                      <use
+                        xlink:href="./img/sprite/symbol/sprite.svg#socials--telegram-icon"
+                      />
                     </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <nav class="footer__nav">
             <ul class="footer__footer-menu footer-menu">
               <li class="footer-menu__item">
-                <a
-                  class="footer-menu__link lang-about-nav-title"
-                  href="#about"
-                >
+                <a class="footer-menu__link lang-about-nav-title" href="#about">
                   О проекте
                 </a>
               </li>

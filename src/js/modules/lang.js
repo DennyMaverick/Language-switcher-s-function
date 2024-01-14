@@ -1,10 +1,6 @@
 //* =========== Объект с переводом страницы ==============
 
 const langs = {
-  'try-it': {
-    ru: 'попробуй!',
-    en: 'try it!',
-  },
   'header-title': {
     ru: 'Реализация функции переключения языков',
     en: 'Realizing of language switcher`s function',
@@ -149,6 +145,10 @@ const repeatElems = {
   'addition-nav-title': {
     ru: 'Дополнение',
     en: 'Addition',
+  },
+  'contacts-nav-title': {
+    ru: 'Контакты',
+    en: 'Contacts',
   },
 };
 

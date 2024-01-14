@@ -4,6 +4,7 @@
   color: $black;
   border-radius: 1rem;
   padding: 0.5rem 1rem;
+  font-size: 1.3rem;
   @include media-down(710px) {
     font-size: 1.07rem;
     padding: 0.5rem 0.7rem;
@@ -12,35 +13,14 @@
     font-weight: 600;
     text-decoration: underline;
   }
-  &::after {
-    cursor: default;
-    content: '';
-    position: absolute;
-    bottom: -5rem;
-    right: 4rem;
-    width: 0.3rem;
-    height: 4rem;
-    border-radius: 50% 50% 0 0;
-    border: 1px dashed $white;
-    background-color: $white;
-    @include media-down(710px) {
-      display: none;
-    }
-  }
-  &__note {
-    color: $second-color;
-    position: absolute;
-    bottom: -8rem;
-    right: 50%;
-    @include media-down(710px) {
-      right: 20%;
-      bottom: -4rem;
-    }
-  }
+
   &__item {
     transition: 0.3s ease-in color;
     &:hover {
       color: $white;
+    }
+    & + .toolbar__item {
+      margin-left: 0.5rem;
     }
   }
 }

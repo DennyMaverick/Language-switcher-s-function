@@ -1,14 +1,24 @@
 .header {
   background-color: $black;
   color: $white;
-  &__inner {
-    position: relative;
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5.7rem;
+    @include bp-desk(tablet) {
+      padding-top: 2.5rem;
+    }
   }
   &__toolbar {
-    position: absolute;
-    right: 3rem;
-    top: 2.5rem;
-
+    display: flex;
+    justify-content: space-between;
+    @include bp-desk(tablet) {
+      margin-left: auto;
+    }
+  }
+  &__inner {
+    position: relative;
   }
   &__info {
     display: flex;
@@ -38,7 +48,9 @@
     }
   }
   &__nav {
-    padding-top: 5.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     @include bp-desk(tablet) {
       padding: 0;
     }
@@ -50,7 +62,7 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
-      @include bp-desk(mobile-sm){
+      @include bp-desk(mobile-sm) {
         margin-left: 20%;
         margin-top: 5%;
       }
