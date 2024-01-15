@@ -63,6 +63,9 @@
 
   &__title {
     margin-bottom: 8rem;
+    @include bp-desk(mobile) {
+      text-transform: uppercase;
+    }
     @include media-down(710px) {
       margin-bottom: 4rem;
     }

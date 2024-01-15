@@ -19,6 +19,9 @@
   }
   &__title {
     margin-bottom: 1.5rem;
+    @include bp-desk(mobile) {
+      text-transform: uppercase;
+  }
   }
   &--main-color {
     color: $main-color;

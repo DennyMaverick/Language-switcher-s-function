@@ -30,6 +30,9 @@
   &__title {
     color: $main-color;
     margin-bottom: 2rem;
+    @include bp-desk(mobile) {
+      text-transform: uppercase;
+    }
     @include media-down(710px) {
       font-size: 4vw;
     }

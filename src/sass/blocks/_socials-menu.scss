@@ -3,6 +3,9 @@
     // .socials-menu__item
 
     &__item {
+      &:hover .socials-menu__social-image {
+        fill: $second-color;
+      }
     }
 
     // .socials-menu__link
@@ -14,6 +17,7 @@
     // .socials-menu__social-image
 
     &__social-image {
+      transition: .3s ease-in fill;
       width: 1.5rem;
       height: 1.5rem;
       fill: $main-color;

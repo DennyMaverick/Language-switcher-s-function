@@ -503,11 +503,17 @@ a:focus {
   margin-top: .2rem;
 }
 
+.socials-menu__item:hover .socials-menu__social-image {
+  fill: #f2db52;
+}
+
 .socials-menu__link {
   padding: .4rem;
 }
 
 .socials-menu__social-image {
+  -webkit-transition: .3s ease-in fill;
+  transition: .3s ease-in fill;
   width: 1.5rem;
   height: 1.5rem;
   fill: #f2526c;
@@ -717,6 +723,18 @@ a:focus {
 }
 
 @media (max-width: 768px) {
+  .header__title {
+    text-transform: uppercase;
+  }
+
+  .about__title {
+    text-transform: uppercase;
+  }
+
+  .get-ready__title {
+    text-transform: uppercase;
+  }
+
   .footer__footer-menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
