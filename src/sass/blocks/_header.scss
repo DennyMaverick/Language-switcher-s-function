@@ -71,4 +71,11 @@
       }
     }
   }
+  &__logo {
+    margin-bottom: 2rem;
+    margin-left: -.8rem;
+    @include bp-desk(mobile) {
+      margin-bottom: 1.3rem;
+    }
+  }
 }

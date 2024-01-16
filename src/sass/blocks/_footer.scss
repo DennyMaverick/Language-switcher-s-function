@@ -34,7 +34,13 @@
     }
   }
   &__left-side {
+    display: flex;
+    align-items: center;
     margin-right: 10rem;
+    @include bp-desk(notebook) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
     @include bp-desk(tablet) {
       margin-right: 0;
     }
@@ -49,5 +55,16 @@
   &__socials {
     display: flex;
   }
-
+  &__logo {
+    margin-right: 2.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: -.8rem;
+    @include bp-desk(notebook) {
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__logo-image {
+    width: 70px;
+    height: 70px;
+  }
 }

@@ -15,59 +15,72 @@
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container header__inner">
         <div class="header__menu-burger menu-burger">
           <span class="menu-burger__item"></span>
         </div>
         <div class="header__top">
           <nav class="header__nav nav">
-          <button class="nav__close close-button">
-            <span class="lang-close-button">закрыть</span>
-          </button>
-          <ul class="header__nav-menu nav__menu">
-            <li class="nav__item">
-              <a
-                class="nav__link nav--first-nav-elem lang-about-nav-title"
-                href="#about"
-              >
-                О проекте
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link lang-get-ready-nav-title" href="#get-ready">
-                Подготовка
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link lang-toolbar-nav-title" href="#toolbar">
-                Создание toolbar
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link lang-main-func-nav-title" href="#main-func">
-                Основная функция
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link lang-addition-nav-title" href="#addition">
-                Дополнение
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link lang-contacts-nav-title" href="#footer">
-                Контакты
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__toolbar toolbar">
+            <button class="nav__close close-button">
+              <span class="lang-close-button">закрыть</span>
+            </button>
+            <ul class="header__nav-menu nav__menu">
+              <li class="nav__item">
+                <a
+                  class="nav__link nav--first-nav-elem lang-about-nav-title"
+                  href="#about"
+                >
+                  О проекте
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link lang-get-ready-nav-title" href="#get-ready">
+                  Подготовка
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link lang-toolbar-nav-title" href="#toolbar">
+                  Создание toolbar
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link lang-main-func-nav-title" href="#main-func">
+                  Основная функция
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link lang-addition-nav-title" href="#addition">
+                  Дополнение
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link lang-contacts-nav-title" href="#footer">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__toolbar toolbar">
             <span class="toolbar__item" data-lang="ru">RU</span>
             <span class="toolbar__item" data-lang="en">EN</span>
           </div>
         </div>
 
         <div class="header__info">
+          <div class="header__logo logo">
+            <a class="logo__link" href="#header">
+              <img
+              class="logo__logo-image"
+              data-aos="zoom-in"
+              data-aos-delay="1500"
+              data-aos-duration="2000"
+              data-aos-offset="0"
+              src="./img/logo/logo-lang-switcher-dark-background.svg"
+              alt="logo"
+            />
+            </a>
+          </div>
           <h1
             class="header__title lang-header-title"
             data-aos="zoom-in"
@@ -460,11 +473,21 @@
         </div>
       </section>
     </main>
-    <footer class="footer" id = "footer">
+    <footer class="footer" id="footer">
       <div class="footer__inner container">
         <div class="footer__row">
           <div class="footer__left-side">
-            <div class="footer__copy copy">
+            <div class="footer__logo">
+              <a class="footer__logo-link" href="#header">
+                <img
+                class="footer__logo-image"
+                src="./img/logo/logo-lang-switcher-dark-background.svg"
+                alt="logo"
+              />
+              </a>
+            </div>
+            <div class="footer__info">
+              <div class="footer__copy copy">
               <span class="copy__copy">&copy; 2024</span>
               |
               <span class="copy__author">Denny Maverick</span>
@@ -502,6 +525,8 @@
                 </li>
               </ul>
             </div>
+            </div>
+
           </div>
           <nav class="footer__nav">
             <ul class="footer__footer-menu footer-menu">
