@@ -54,6 +54,7 @@
   }
   &__socials {
     display: flex;
+    margin-bottom: 1.5rem;
   }
   &__logo {
     margin-right: 2.5rem;
@@ -66,5 +67,14 @@
   &__logo-image {
     width: 70px;
     height: 70px;
+  }
+  &__support {
+    display: flex;
+    align-items: center;
+    @include media-down(300px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
   }
 }

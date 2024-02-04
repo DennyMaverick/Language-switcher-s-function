@@ -105,9 +105,17 @@ const langs = {
     ru: 'Закрыть',
     en: 'Close',
   },
-  'sicials-desc': {
+  'socials-desc': {
     ru: 'Связаться с автором проекта :',
     en: 'contact to the projec`s author  :',
+  },
+  'support-text': {
+    ru: 'Поддержать проект :',
+    en: 'Support the project :',
+  },
+  'buy-coffee-text': {
+    ru: 'купить кофе',
+    en: 'buy a coffee',
   },
 };
 

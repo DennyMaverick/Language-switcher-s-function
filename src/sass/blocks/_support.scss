@@ -1,0 +1,33 @@
+.support {
+  &__text {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: $second-color;
+    flex-shrink: 0;
+    margin-right: 1.5rem;
+  }
+  &__coffee-image {
+    width: 15px;
+    height: 15px;
+    fill: $main-color;
+    transition: .3s ease-in fill;
+  }
+  &__buy-coffee-text {
+    font-size: 1.5rem;
+    color: $main-color;
+    transition: .3s ease-in color;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 3px;
+    &:hover .support__buy-coffee-text {
+      color: $second-color;
+    }
+    &:hover .support__coffee-image {
+      fill: $second-color;
+    }
+  }
+
+}

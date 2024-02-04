@@ -12,6 +12,7 @@
       font-size: 1.1rem;
       color: $second-color;
       margin-right: 1rem;
+
       @include bp-desk(mobile-lx) {
         font-size: 1rem;
       }
